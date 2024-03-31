@@ -1,9 +1,12 @@
 * {
  font-size: 62.5%;
-}
-body {
+ scrollbar-color: #8e8e8e #fff;
+ scrollbar-width: thin;
+ box-sizing: border-box;
  margin: 0;
  padding: 0;
- box-sizing: border-box;
+}
+body {
  background-color: #ccc;
+ position: relative;
 }

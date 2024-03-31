@@ -1,15 +1,50 @@
 /* HeroSection.module.css */
 
 .hero {
- height: 60dvh;
- background-color: #f2f2f2;
- padding: 20px 0;
- text-align: center;
- font-family: "Lato";
+ background-color: #ccc;
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
+ position: relative;
+ width: 100%;
+}
+.container {
+ margin: 1rem;
+ padding: 0 4rem;
+}
+.content {
+ align-items: center;
+ display: flex;
+ gap: 5rem;
+ height: 65rem;
+ justify-content: center;
+ position: relative;
+}
+.hero_main {
+ align-items: center;
+ display: flex;
+ gap: 10rem;
+ justify-content: center;
+ position: relative;
+}
+.hero_text {
+ display: flex;
+ flex-direction: column;
+ max-width: 50rem;
+ position: relative;
 }
 
+.skills {
+ align-items: center;
+ bottom: 0;
+ color: #767676;
+ display: flex;
+ font-size: 1.7rem;
+ left: 0;
+ position: absolute;
+}
 .title {
- font-size: 3rem;
+ font-size: 5rem;
  margin-bottom: 20px;
 }
 
@@ -29,18 +64,7 @@
  font-size: 1rem;
  color: #777;
 }
-.content {
- position: absolute;
- top: 30%;
- left: 50%;
- transform: translate(-50%, -50%);
- height: 20rem;
- overflow: hidden;
- font-family: "Lato", sans-serif;
- font-size: 7rem;
- line-height: 40px;
- color: #4fcfef;
-}
+
 .content__container {
  font-weight: 600;
  overflow: hidden;
@@ -91,7 +115,18 @@
  line-height: 40px;
  margin: 0;
 }
-
+.img {
+ -webkit-animation: morph 8s ease-in-out infinite;
+ animation: morph 8s ease-in-out infinite;
+ background-position: 50%;
+ background-repeat: no-repeat;
+ background-size: cover;
+ border: 3px solid #2d2e32;
+ border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+ height: 35rem;
+ position: relative;
+ transition: all 1s ease-in-out;
+}
 @-webkit-keyframes opacity {
  0%,
  100% {
@@ -162,5 +197,15 @@
  83.3%,
  95.96% {
   transform: translate3d(0, -25%, 0);
+ }
+}
+@media (max-width: 600px) {
+ .img {
+  position: absolute;
+  bottom: 150px;
+  z-index: 1;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
  }
 }
