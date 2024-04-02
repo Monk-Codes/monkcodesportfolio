@@ -9,6 +9,12 @@ export default function Hero() {
     <div className={styles.content}>
      <div className={styles.hero_main}>
       <div className={styles.hero_text}>
+       <p className={styles.subtitle}>Monk Codes💻</p>
+       <p className={styles.description}>Passionate about building modern and user-friendly web applications with React.</p>
+       <span>
+        <SocialIcon url="https://linkedin.com/in/dxpratikk" bgColor="#ccc" />
+        <SocialIcon url="https://github.com/Monk-Codes" bgColor="#ccc" />
+       </span>
        <div className={styles.content__container}>
         <p className={styles.content__container__text}>Pratik Jaiswal</p>
         <ul className={styles.content__container__list}>
@@ -18,19 +24,18 @@ export default function Hero() {
          <li className={styles.content__container__list__item}>CSS</li>
         </ul>
        </div>
-       <p className={styles.subtitle}>Monk Codes 💻</p>
-       <p className={styles.description}>Passionate about building modern and user-friendly web applications with React.</p>
       </div>
 
       <img src={profile} alt="Monk Codes" className={styles.img} />
      </div>
      <div className={styles.skills}>
+      <p className={styles.para}>Tech Stack</p>
       <div className={styles.logos}>
-       <p className={styles.contact}>
+       <ul className={styles.skills_img}>
         <SocialIcon url="https://linkedin.com/in/dxpratikk" />
         <SocialIcon url="https://github.com/Monk-Codes" />
         <SocialIcon url="https://instagram.com/monk_codes" />
-       </p>
+       </ul>
       </div>
      </div>
     </div>
