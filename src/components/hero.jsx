@@ -31,10 +31,13 @@ export default function Hero() {
      <div className={styles.skills}>
       <p className={styles.para}>Tech Stack</p>
       <div className={styles.logos}>
-       <ul className={styles.skills_img}>
-        <SocialIcon url="https://linkedin.com/in/dxpratikk" />
-        <SocialIcon url="https://github.com/Monk-Codes" />
-        <SocialIcon url="https://instagram.com/monk_codes" />
+       <ul>
+        <li>
+         <img src="https://skillicons.dev/icons?i=html,css" alt="skill-icon" />
+         <img src="https://skillicons.dev/icons?i=js,ts" alt="skill-icon" />
+         <img src="https://skillicons.dev/icons?i=react,next" alt="skill-icon" />
+         <img src="https://skillicons.dev/icons?i=tailwind,scss" alt="skill-icon" />
+        </li>
        </ul>
       </div>
      </div>

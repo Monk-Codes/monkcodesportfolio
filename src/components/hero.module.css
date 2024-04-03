@@ -36,6 +36,7 @@
 .hero_text span {
  display: flex;
  gap: 0.5rem;
+ margin-top: -1.2rem;
 }
 .skills {
  display: flex;
@@ -48,13 +49,13 @@
 .skills ul {
  display: flex;
  flex-wrap: wrap;
- gap: 1rem;
  list-style: none;
 }
-.skills_img {
- cursor: pointer;
- height: 5rem;
+.skills ul li img {
+ height: 4rem;
+ margin: 0 2px;
  transition: all 0.3s ease-in-out;
+ width: 7rem;
 }
 .title {
  font-size: 5rem;
@@ -127,6 +128,7 @@
  animation-iteration-count: infinite;
 }
 .content__container__list__item {
+ color: #16a085;
  line-height: 40px;
  margin: 0;
 }
@@ -260,23 +262,63 @@
  .hero_text {
   width: 100%;
  }
+ .hero_text span {
+  gap: 0.2rem;
+  justify-content: center;
+  margin-top: -1.2rem;
+  margin-bottom: -3.2rem;
+ }
  .subtitle {
-  font-size: 3.2rem;
+  font-size: 3.3rem;
+  margin-bottom: 0px;
  }
  .description {
   line-height: 1.6;
   font-size: 1.8rem;
+  margin-bottom: 0;
  }
  .content__container {
-  width: 100%;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding: 0 10px;
+  height: 2.8rem;
+ }
+ .content__container__text {
+  float: none;
+  margin-right: 60px;
+  font-weight: 100;
+ }
+ .content__container__list {
+  padding-left: 100px;
+  text-align: center;
+ }
+ .content__container__list__item {
+  font-weight: 600;
+  line-height: 22px;
+ }
+ .content__container:after,
+ .content__container:before {
+  font-size: 3rem;
+  line-height: 20px;
  }
  .img {
   position: absolute;
-  top: -100px;
-  z-index: -1;
-  width: 20rem;
-  height: 20rem;
+  top: -140px;
+  height: 15rem;
   display: flex;
+ }
+ .skills {
+  flex-direction: column;
+  position: static;
+ }
+ .skills ul {
+  justify-content: center;
+ }
+ .para {
+  font-size: 1.8rem;
+  border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 0;
+  padding-bottom: 5px;
  }
 }

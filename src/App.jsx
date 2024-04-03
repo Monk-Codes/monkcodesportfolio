@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/nav";
 import Hero from "./components/hero";
 import Projects from "./components/projects";
+import Contact from "./components/contact";
 
 function App() {
  return (
@@ -14,6 +15,7 @@ function App() {
     </Routes>
    </BrowserRouter>
    <Projects />
+   <Contact />
   </>
  );
 }
