@@ -78,7 +78,7 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
-  z-index: 10;
+  z-index: 100;
   display: block;
  }
  .overlay {
@@ -87,8 +87,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
-  content: "close";
  }
  .img {
   height: 4rem;
@@ -121,6 +119,12 @@
   align-items: center;
  }
  .navbarHeader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  margin-top: 1rem;
+  margin-right: 1rem;
   display: block;
  }
 }
