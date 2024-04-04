@@ -4,7 +4,7 @@ import profile from "../assets/profile.jpg";
 
 export default function Hero() {
  return (
-  <div className={styles.hero}>
+  <div className={styles.hero} id="home">
    <div className={styles.container}>
     <div className={styles.content}>
      <div className={styles.hero_main}>

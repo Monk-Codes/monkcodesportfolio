@@ -3,11 +3,11 @@ import pro1 from "../assets/Screenshot (26).png";
 
 export default function Projects() {
  return (
-  <section className={styles.projects}>
+  <section className={styles.projects} id="projects">
    <div className={styles.container}>
     <div className={styles.content}>
      <div className={styles.bg}>
-      <h1>Bankist</h1>
+      <h1>Monk Codes</h1>
      </div>
      <div className={styles.nft}>
       <div className={styles.main}>

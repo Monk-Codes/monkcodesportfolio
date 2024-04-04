@@ -1,6 +1,7 @@
-import { Link, Outlet } from "react-router-dom";
 import styles from "./nav.module.css";
 import logo from "../assets/logo.png";
+import mobicon from "../assets/mobicon.svg";
+import closemobicon from "../assets/closemobicon.svg";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
@@ -24,37 +25,37 @@ export default function Navbar() {
  const toggleSidebar = () => {
   setIsOpen(!isOpen);
  };
+
+ const closeMobileMenu = () => {
+  setIsOpen(false);
+ };
+
  return (
   <>
    <nav className={styles.navbar}>
-    <Link to="/" className={styles.logo}>
+    <a href="/" className={styles.logo}>
      <img src={logo} alt="Monk Codes" className={styles.img} />
-    </Link>
-    <div className={styles.navbarHeader}>
-     {isMobile && (
-      <button className={styles.hamburger} onClick={toggleSidebar}>
-       <div className={`${styles.bar} ${isOpen ? styles.open : ""}`}></div>
-       <div className={`${styles.bar} ${isOpen ? styles.open : ""}`}></div>
-       <div className={`${styles.bar} ${isOpen ? styles.open : ""}`}></div>
-      </button>
-     )}
+    </a>
+    <div className={styles.navbarHeader} onClick={toggleSidebar}>
+     <img src={isOpen ? closemobicon : mobicon} alt="close" className={styles.img} />
     </div>
     <ul className={`${styles.navList} ${isMobile && isOpen ? styles.active : ""}`}>
      <li>
-      <Link to="/">Home</Link>
+      <a href="#home">Home</a>
      </li>
      <li>
-      <Link to="/about">About</Link>
+      <a href="#about">About</a>
      </li>
      <li>
-      <Link to="/portfolio">Portfolio</Link>
+      <a href="#projects">Projects</a>
      </li>
      <li>
-      <Link to="/contact">Contact</Link>
+      <a href="#contact">Contact</a>
      </li>
     </ul>
    </nav>
-   <Outlet />
+   {/* Close mobile menu when mobicon is clicked */}
+   {isMobile && isOpen && <div className={styles.overlay} onClick={closeMobileMenu}></div>}
   </>
  );
 }

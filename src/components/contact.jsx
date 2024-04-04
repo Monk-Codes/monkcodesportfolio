@@ -4,7 +4,7 @@ import mail from "../assets/mail.svg";
 export default function Contact() {
  return (
   <>
-   <section className={styles.contact}>
+   <section className={styles.contact} id="contact">
     <div className={styles.container}>
      <div className={styles.contact_content}>
       <div className={styles.contact_title}>

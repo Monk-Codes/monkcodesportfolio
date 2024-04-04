@@ -29,80 +29,83 @@
  backdrop-filter: blur(2px);
  overflow: hidden;
  transition: 0.5s all;
- hr {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #88888855;
-  margin-top: 0;
- }
- ins {
-  text-decoration: none;
- }
- .main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 1rem;
-  .projectImage {
-   border-radius: 0.5rem;
-   max-width: 100%;
-   height: 300px;
-   overflow: hidden;
-   object-fit: contain;
-  }
-  .description {
-   font-size: 2.5rem;
-   margin: 0.5rem 0;
-   color: #a89ec9;
-  }
-  .projectInfo {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   .info {
-    display: flex;
-    align-items: center;
-    color: #ee83e5;
-    font-size: 2rem;
-    font-weight: 700;
-    ins {
-     margin-left: -0.3rem;
-     margin-right: 0.5rem;
-    }
-   }
-   .skills {
-    display: flex;
-    align-items: center;
-    color: #a89ec9;
-    margin-right: 0.2rem;
-    ins {
-     margin: 0.5rem;
-     margin-bottom: 0.4rem;
-    }
-   }
-  }
- }
- ::before {
-  position: fixed;
-  content: "";
-  box-shadow: 0 0 100px 40px #ffffff08;
-  top: -10%;
-  left: -100%;
-  transform: rotate(-45deg);
-  height: 60rem;
-  transition: 0.7s all;
- }
- &:hover {
-  border: 1px solid #ffffff44;
-  box-shadow: 0 7px 50px 10px #000000aa;
-  transform: scale(1.01);
-  filter: brightness(1.3);
-  ::before {
-   filter: brightness(0.5);
-   top: -100%;
-   left: 200%;
-  }
- }
+ cursor: pointer;
+}
+hr {
+ width: 100%;
+ border: none;
+ border-bottom: 1px solid #88888855;
+ margin-top: 0;
+}
+ins {
+ text-decoration: none;
+}
+.main {
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ padding: 1rem;
+}
+.projectImage {
+ border-radius: 0.5rem;
+ max-width: 100%;
+ height: 300px;
+ overflow: hidden;
+ object-fit: contain;
+}
+.description {
+ font-size: 2.5rem;
+ margin: 0.5rem 0;
+ color: #a89ec9;
+}
+.projectInfo {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.info {
+ display: flex;
+ align-items: center;
+ color: #ee83e5;
+ font-size: 2rem;
+ font-weight: 700;
+}
+.info ins {
+ margin-left: -0.3rem;
+ margin-right: 0.5rem;
+}
+
+.skills {
+ display: flex;
+ align-items: center;
+ color: #a89ec9;
+ margin-right: 0.2rem;
+}
+.skills ins {
+ margin: 0.5rem;
+ margin-bottom: 0.4rem;
+}
+.nft ::before {
+ position: fixed;
+ content: "";
+ box-shadow: 0 0 100px 40px #ffffff08;
+ top: -10%;
+ left: -100%;
+ transform: rotate(-45deg);
+ height: 60rem;
+ transition: 0.7s all;
+}
+.nft::before :hover {
+ border: 1px solid #ffffff44;
+ box-shadow: 0 7px 50px 10px #000000aa;
+ transform: scale(1.01);
+ filter: brightness(1.3);
+}
+
+.nft:hover ::before {
+ filter: brightness(0.5);
+ top: -100%;
+ left: 200%;
 }
 
 .bg {
@@ -112,9 +115,20 @@
  transform: translate(-50%, -50%);
 }
 h1 {
- font-size: 15rem;
+ text-align: center;
+ font-size: 12rem;
+ text-wrap: nowrap;
+ text-transform: uppercase;
  filter: opacity(0.5);
 }
 h2 {
  font-size: 4rem;
+}
+@media (max-width: 600px) {
+ h1 {
+  font-size: 4rem;
+ }
+ h2 {
+  font-size: 2rem;
+ }
 }
