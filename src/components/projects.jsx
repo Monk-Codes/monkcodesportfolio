@@ -18,7 +18,7 @@ export default function Projects() {
         <div className={styles.info}>
          <p>Simple Banking Webpage</p>
         </div>
-        <div className={styles.duration}>
+        <div className={styles.skills}>
          <ins>
           <img src="https://skillicons.dev/icons?i=html,css,js" alt="skill-icon" />
          </ins>
@@ -36,7 +36,7 @@ export default function Projects() {
         <div className={styles.info}>
          <p>Simple Banking Webpage</p>
         </div>
-        <div className={styles.duration}>
+        <div className={styles.skills}>
          <ins>
           <img src="https://skillicons.dev/icons?i=html,css,js" alt="skill-icon" />
          </ins>

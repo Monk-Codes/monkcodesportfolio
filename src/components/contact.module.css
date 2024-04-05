@@ -1,18 +1,20 @@
 .contact {
- background: #fff;
+ background: #ccc;
 }
 .container {
- margin: 0 auto;
+ text-align: center;
+ margin: 6rem auto;
  max-width: 100rem;
- padding: 0 4rem;
+ padding: 0 8rem;
 }
 .contact_content {
  display: flex;
  flex-direction: column;
+ align-items: center;
 }
 .contact_title p {
- color: #147efb;
- font-size: 1.7rem;
+ color: #555;
+ font-size: 4rem;
  font-weight: 700;
  margin-bottom: 1rem;
  text-transform: uppercase;
@@ -24,8 +26,8 @@
 .contact_icons {
  display: flex;
  flex-wrap: wrap;
- gap: 8rem;
- margin-top: 5rem;
+ gap: 2rem;
+ margin-top: 2rem;
 }
 .contact_icon_box {
  align-items: center;
@@ -34,10 +36,8 @@
 }
 .contact_icon_box span {
  align-items: center;
- background-color: #fff;
  border-radius: 50%;
  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
- color: #147efb;
  display: flex;
  height: 5rem;
  justify-content: center;
@@ -63,7 +63,7 @@
 
 @media (max-width: 600px) {
  .contact {
-  padding: 8rem 0;
+  padding: 4rem 0;
  }
  .container {
   padding: 0 1.5rem;
@@ -78,6 +78,7 @@
   text-align: center;
  }
  .contact_icon_box {
+  background-color: transparent;
   flex-direction: column;
  }
 }
