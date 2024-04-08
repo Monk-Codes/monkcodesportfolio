@@ -27,6 +27,7 @@ export default function Navbar() {
  };
 
  const closeMobileMenu = () => {
+  console.log("close");
   setIsOpen(false);
  };
 
@@ -41,16 +42,24 @@ export default function Navbar() {
     </div>
     <ul className={`${styles.navList} ${isMobile && isOpen ? styles.active : ""}`}>
      <li>
-      <a href="#home">Home</a>
+      <a href="#home" onClick={closeMobileMenu}>
+       Home
+      </a>
      </li>
      <li>
-      <a href="#about">About</a>
+      <a href="#about" onClick={closeMobileMenu}>
+       About
+      </a>
      </li>
      <li>
-      <a href="#projects">Projects</a>
+      <a href="#projects" onClick={closeMobileMenu}>
+       Projects
+      </a>
      </li>
      <li>
-      <a href="#contact">Contact</a>
+      <a href="#contact" onClick={closeMobileMenu}>
+       Contact
+      </a>
      </li>
     </ul>
    </nav>

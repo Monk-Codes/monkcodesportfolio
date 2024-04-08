@@ -1,5 +1,7 @@
 .contact {
  background: #ccc;
+ height: 100%;
+ padding: 2rem;
 }
 .container {
  text-align: center;
@@ -16,10 +18,10 @@
  color: #555;
  font-size: 4rem;
  font-weight: 700;
- margin-bottom: 1rem;
  text-transform: uppercase;
 }
 .contact_title h3 {
+ margin-bottom: 2rem;
  color: #2d2e32;
  font-size: 2.5rem;
 }

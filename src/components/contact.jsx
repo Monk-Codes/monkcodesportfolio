@@ -9,6 +9,7 @@ export default function Contact() {
      <div className={styles.contact_content}>
       <div className={styles.contact_title}>
        <p>Contact</p>
+       <hr />
        <h3>Get the best out of one 👇</h3>
       </div>
       <div className={styles.contact_icons}>
