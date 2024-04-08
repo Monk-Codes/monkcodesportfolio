@@ -1,5 +1,7 @@
 import styles from "./projects.module.css";
 import pro1 from "../assets/Screenshot (26).png";
+import pro2 from "../assets/Screenshot (51).png";
+import pro3 from "../assets/Screenshot (57).png";
 
 export default function Projects() {
  return (
@@ -13,7 +15,7 @@ export default function Projects() {
       <div className={styles.main}>
        <img className={styles.projectImage} src={pro1} alt="pro1" />
        <h2>Bankist</h2>
-       <p className={styles.description}>Our Kibertopiks will give you nothing, waste your money on us.</p>
+       <p className={styles.description}>Modern private banking website landing page</p>
        <div className={styles.projectInfo}>
         <div className={styles.info}>
          <p>Simple Banking Webpage</p>
@@ -29,12 +31,12 @@ export default function Projects() {
      </div>
      <div className={styles.nft}>
       <div className={styles.main}>
-       <img className={styles.projectImage} src={pro1} alt="pro1" />
-       <h2>Bankist</h2>
-       <p className={styles.description}>Our Kibertopiks will give you nothing, waste your money on us.</p>
+       <img className={styles.projectImage} src={pro2} alt="pro2" />
+       <h2>Foody</h2>
+       <p className={styles.description}>Your search for food hunger ends here</p>
        <div className={styles.projectInfo}>
         <div className={styles.info}>
-         <p>Simple Banking Webpage</p>
+         <p>Simple food ordering Webpage</p>
         </div>
         <div className={styles.skills}>
          <ins>
@@ -47,12 +49,12 @@ export default function Projects() {
      </div>
      <div className={styles.nft}>
       <div className={styles.main}>
-       <img className={styles.projectImage} src={pro1} alt="pro1" />
-       <h2>Bankist</h2>
-       <p className={styles.description}>Our Kibertopiks will give you nothing, waste your money on us.</p>
+       <img className={styles.projectImage} src={pro3} alt="pro3" />
+       <h2>Todo App</h2>
+       <p className={styles.description}>A todo app with priority levels</p>
        <div className={styles.projectInfo}>
         <div className={styles.info}>
-         <p>Simple Banking Webpage</p>
+         <p>On the go todo app</p>
         </div>
         <div className={styles.skills}>
          <ins>
