@@ -12,8 +12,8 @@ export default function Hero() {
        <p className={styles.subtitle}>Monk Codes💻</p>
        <p className={styles.description}>Passionate about building modern and user-friendly web applications with React.</p>
        <span>
-        <SocialIcon url="https://linkedin.com/in/dxpratikk" bgColor="#ccc" />
-        <SocialIcon url="https://github.com/Monk-Codes" bgColor="#ccc" />
+        <SocialIcon url="https://linkedin.com/in/dxpratikk" bgColor="#ccc" target="_blank" />
+        <SocialIcon url="https://github.com/Monk-Codes" bgColor="#ccc" target="_blank" />
        </span>
        <div className={styles.content__container}>
         <p className={styles.content__container__text}>Pratik Jaiswal</p>

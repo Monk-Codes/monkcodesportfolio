@@ -121,7 +121,10 @@ ins {
  filter: opacity(0.5);
 }
 h2 {
- font-size: 4rem;
+ font-size: 3rem;
+ font-family: Poppins, "Helvetica Neue";
+ color: #ccc;
+ text-wrap: nowrap;
 }
 
 @media (max-width: 600px) {

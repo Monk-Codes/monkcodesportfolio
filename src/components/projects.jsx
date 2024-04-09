@@ -13,8 +13,10 @@ export default function Projects() {
      </div>
      <div className={styles.nft}>
       <div className={styles.main}>
-       <img className={styles.projectImage} src={pro1} alt="pro1" />
-       <h2>Bankist</h2>
+       <a href="https://crownbank.netlify.app/" target="_blank">
+        <img className={styles.projectImage} src={pro1} alt="pro1" />
+       </a>
+       <h2>Crown Bank</h2>
        <p className={styles.description}>Modern private banking website landing page</p>
        <div className={styles.projectInfo}>
         <div className={styles.info}>
@@ -31,7 +33,9 @@ export default function Projects() {
      </div>
      <div className={styles.nft}>
       <div className={styles.main}>
-       <img className={styles.projectImage} src={pro2} alt="pro2" />
+       <a href="https://crownbank.netlify.app/" target="_blank">
+        <img className={styles.projectImage} src={pro2} alt="pro2" />
+       </a>
        <h2>Foody</h2>
        <p className={styles.description}>Your search for food hunger ends here</p>
        <div className={styles.projectInfo}>
@@ -49,7 +53,9 @@ export default function Projects() {
      </div>
      <div className={styles.nft}>
       <div className={styles.main}>
-       <img className={styles.projectImage} src={pro3} alt="pro3" />
+       <a href="https://crownbank.netlify.app/" target="_blank">
+        <img className={styles.projectImage} src={pro3} alt="pro3" />
+       </a>
        <h2>Todo App</h2>
        <p className={styles.description}>A todo app with priority levels</p>
        <div className={styles.projectInfo}>
@@ -58,7 +64,7 @@ export default function Projects() {
         </div>
         <div className={styles.skills}>
          <ins>
-          <img src="https://skillicons.dev/icons?i=html,css,js" alt="skill-icon" />
+          <img src="https://skillicons.dev/icons?i=html,css,react" alt="skill-icon" />
          </ins>
         </div>
        </div>
