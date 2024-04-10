@@ -1,6 +1,7 @@
 import styles from "./contact.module.css";
 import map from "../assets/map.svg";
 import mail from "../assets/mail.svg";
+import phone from "../assets/phone.svg";
 export default function Contact() {
  return (
   <>
@@ -29,6 +30,15 @@ export default function Contact() {
         <div className={styles.contact_info}>
          <h3>Mail</h3>
          <a href="mailto:monkcodesdev@gmail.com">monkcodesdev@gmail.com</a>
+        </div>
+       </div>
+       <div className={styles.contact_icon_box}>
+        <span>
+         <img src={phone} alt="phone" />
+        </span>
+        <div className={styles.contact_info}>
+         <h3>WhatsApp</h3>
+         <a href="https://wa.me/8961894629">Connect on WhatsApp</a>
         </div>
        </div>
       </div>
