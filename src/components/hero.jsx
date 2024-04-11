@@ -16,7 +16,7 @@ export default function Hero() {
         <SocialIcon url="https://github.com/Monk-Codes" bgColor="#ccc" target="_blank" />
        </span>
        <div className={styles.content__container}>
-        <p className={styles.content__container__text}>Pratik Jaiswal</p>
+        <p className={styles.content__container__text}>Pratik Jaiswal </p>
         <ul className={styles.content__container__list}>
          <li className={styles.content__container__list__item}>REACT</li>
          <li className={styles.content__container__list__item}>NEXT</li>

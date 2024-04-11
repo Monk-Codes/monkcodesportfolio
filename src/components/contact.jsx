@@ -38,7 +38,7 @@ export default function Contact() {
         </span>
         <div className={styles.contact_info}>
          <h3>WhatsApp</h3>
-         <a href="https://wa.me/8961894629">Connect on WhatsApp</a>
+         <a href="https://wa.me/+91-8961894629">Connect on WhatsApp</a>
         </div>
        </div>
       </div>
